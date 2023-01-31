@@ -22,7 +22,7 @@ public class Demo {
     }
 
      public static void demoForArreglos(){
-        String [] arreglo = {"pato", "palabra", "ochenta", "chapala", "tonala"};
+        String [] arreglo = {"pato", "ochenta", "chapala", "tonala"};
 
         for  (String palabra: arreglo){
             System.out.println(palabra);
