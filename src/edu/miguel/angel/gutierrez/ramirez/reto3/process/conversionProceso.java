@@ -11,8 +11,8 @@ public class conversionProceso {
      * @return binario representación en base binaria del número decimal recibido
      */
     public static String covertirDecimalABinario(String decimal){
-
+        System.out.println("ded");
+        return decimal;
     }
-
 
 }
