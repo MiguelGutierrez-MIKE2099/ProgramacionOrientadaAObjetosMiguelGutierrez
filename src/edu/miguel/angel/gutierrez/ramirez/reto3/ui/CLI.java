@@ -46,8 +46,7 @@ public class CLI {
                     System.out.println(conversionProceso.covertirDecimalABinario(numToCnvrt, (byte)16));
                     break;
                 case 'd':
-                    System.out.println(conversionProceso.convertirBinarioaHexadecimal
-                            (numToCnvrt, (byte)2));
+                    System.out.println(conversionProceso.convertirBinarioaHexadecimal (numToCnvrt, (byte)2));
                     break;
                 case 'e':
                     System.out.println(conversionProceso.convertirBinarioaHexadecimal(numToCnvrt, (byte)8));
