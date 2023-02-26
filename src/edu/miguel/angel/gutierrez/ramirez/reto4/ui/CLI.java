@@ -53,6 +53,7 @@ public class CLI {
      * En un ultimo momento me dió problemas el siguiente fragmento del codigo,
      * al revisarlo y comparar con mis compañeros, no sé que fué lo que hice que originó errores al momento de añadir las ultimas partes.
      */
+   /*
     private static Acciones getMostSalesPerFlavor = () -> {
         for (int i = 0; i < tablaVentas.length; ++i) {
             System.out.printf(MOST_SALES_PER_FLAVOR_OUTPUT, tiposCafe[i], Proceso.getMostSalesPerFlavor(tablaVentas[i], trimestres));
@@ -62,20 +63,21 @@ public class CLI {
 
     /**
      * Define la acción que obtiene el trimestre en el que el sabor de café dado tuvo la mayor cantidad de ventas.
-     */
+
 
 
     /**
      * En un ultimo momento me dió problemas el siguiente fragmento del codigo,
      * al revisarlo y comparar con mis compañeros, no sé que fué lo que hice que originó errores al momento de añadir las ultimas partes.
      */
+            /*
     private static final Acciones getMostSales = () -> {
         System.out.printf(MOST_SALES_OUTPUT, Proceso.getMostSales(tablaVentas, trimestres));
     };
 
     /*
      * Adding the menu options and actions.
-     */
+
     static {
         menu
                 .addOption(MOST_SALES_PER_FLAVOR_OPTION, getMostSalesPerFlavor)
@@ -86,6 +88,7 @@ public class CLI {
     /**
      * Muestreo del menu y ejecucion de sus respectivas opciones definidas.
      */
+    /*
     public static void getStatistics() {
         menu.showMenu();
         do {
@@ -94,4 +97,6 @@ public class CLI {
             menu.executeOption(option);
         } while (menu.isAlive());
     }
+    */
+
 }
