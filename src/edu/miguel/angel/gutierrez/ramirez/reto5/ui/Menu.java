@@ -13,14 +13,18 @@ public class Menu {
         Scanner sc = new Scanner(System.in);
         int opcion;
 
-        System.out.println("Bienvenido al juego!\n");
-        System.out.println("Seleccione la dificultad de su partida:");
-        do {
-            System.out.println("Elija una opción:\n");
-            System.out.println("1. Facil");
-            System.out.println("2. Intermedio");
-            System.out.println("3. Dificil");
-            System.out.println("0. Salir");
+
+
+                System.out.println("Bienvenido al juego!\n");
+                System.out.println("Seleccione la dificultad de su partida:");
+                do {
+                    System.out.println("Elija una opción:\n");
+                    System.out.println("1. Facil");
+                    System.out.println("2. Intermedio");
+                    System.out.println("3. Dificil");
+                    System.out.println("0. Salir");
+
+
 
             opcion = sc.nextInt();
 
@@ -67,6 +71,8 @@ public class Menu {
                 default:
                     System.out.println("Opción invalida, por favor no seas tonto y escoge una opcion valida tqm <3");
                     break;
+
+
             }
         } while (opcion != 0);
 

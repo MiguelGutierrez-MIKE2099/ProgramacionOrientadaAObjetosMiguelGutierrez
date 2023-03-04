@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.Random;
 public class DificultProcess {
 
+
+
     /**
      *String para las palabras del nivel facil:
      */
@@ -35,12 +37,50 @@ public class DificultProcess {
 
         Scanner sc = new Scanner(System.in);
 
+
+        /**
+         *  implementar el manejo de excepciones para la adivinanza
+         *  de palabras y la selección del nivel de juego en modo facil.
+         */
+
+        String palabraSecreta = "secreto";
+        boolean adivinado = false;
+        Scanner scanner = new Scanner(System.in);
+
+        while (!adivinado) {
+            try {
+                System.out.print("Adivina la palabra (o ingresa 0 para salir): ");
+                String entrada = scanner.nextLine();
+
+                if (entrada.equals("0")) {
+                    break; // el usuario quiere salir del programa
+                }
+
+                if (!entrada.matches("[a-zA-Z]+")) {
+                    throw new Exception("Por favor, ingresa solo letras");
+                }
+
+                if (entrada.equalsIgnoreCase(palabraSecreta)) {
+                    System.out.println("¡Adivinaste la palabra!");
+                    adivinado = true;
+                } else {
+                    System.out.println("No, esa no es la palabra.");
+                }
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        }
+
+
+
+
         while (intentos > 0 && Arrays.binarySearch(letrasAdivinadas, '_') >= 0) {
             System.out.println("Palabra: " + String.valueOf(letrasAdivinadas));
             System.out.println("Intentos restantes: " + intentos);
             System.out.print("Ingresa una letra: ");
             char letra = sc.next().charAt(0);
 
+            
             if (palabra.indexOf(letra) >= 0) {
                 for (int i = 0; i < palabra.length(); i++) {
                     if (palabra.charAt(i) == letra) {
@@ -50,6 +90,8 @@ public class DificultProcess {
             } else {
                 intentos--;
             }
+
+
         }
 
         if (Arrays.binarySearch(letrasAdivinadas, '_') < 0) {
@@ -74,6 +116,39 @@ public class DificultProcess {
         int intentos = 5;
 
         Scanner sc = new Scanner(System.in);
+
+
+        /**
+         *  implementar el manejo de excepciones para la adivinanza
+         *  de palabras y la selección del nivel de juego en modo intermedio.
+         */
+        String palabraSecreta = "secreto";
+        boolean adivinado = false;
+        Scanner scanner = new Scanner(System.in);
+
+        while (!adivinado) {
+            try {
+                System.out.print("Adivina la palabra (o ingresa 0 para salir): ");
+                String entrada = scanner.nextLine();
+
+                if (entrada.equals("0")) {
+                    break; // el usuario quiere salir del programa
+                }
+
+                if (!entrada.matches("[a-zA-Z]+")) {
+                    throw new Exception("Por favor, ingresa solo letras");
+                }
+
+                if (entrada.equalsIgnoreCase(palabraSecreta)) {
+                    System.out.println("¡Adivinaste la palabra!");
+                    adivinado = true;
+                } else {
+                    System.out.println("No, esa no es la palabra.");
+                }
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        }
 
         while (intentos > 0 && Arrays.binarySearch(letrasAdivinadas, '_') >= 0) {
             System.out.println("Palabra: " + String.valueOf(letrasAdivinadas));
@@ -113,6 +188,41 @@ public class DificultProcess {
         int intentos = 3;
 
         Scanner sc = new Scanner(System.in);
+
+        /**
+         *  implementar el manejo de excepciones para la adivinanza
+         *  de palabras y la selección del nivel de juego en modo dificil.
+         */
+
+        String palabraSecreta = "secreto";
+        boolean adivinado = false;
+        Scanner scanner = new Scanner(System.in);
+
+        while (!adivinado) {
+            try {
+                System.out.print("Adivina la palabra (o ingresa 0 para salir): ");
+                String entrada = scanner.nextLine();
+
+                if (entrada.equals("0")) {
+                    break; // el usuario quiere salir del programa
+                }
+
+                if (!entrada.matches("[a-zA-Z]+")) {
+                    throw new Exception("Por favor, ingresa solo letras");
+                }
+
+                if (entrada.equalsIgnoreCase(palabraSecreta)) {
+                    System.out.println("¡Adivinaste la palabra!");
+                    adivinado = true;
+                } else {
+                    System.out.println("No, esa no es la palabra.");
+                }
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        }
+
+
 
         while (intentos > 0 && Arrays.binarySearch(letrasAdivinadas, '_') >= 0) {
             System.out.println("Palabra: " + String.valueOf(letrasAdivinadas));
