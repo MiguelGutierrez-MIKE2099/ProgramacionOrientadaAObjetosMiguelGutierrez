@@ -1,6 +1,6 @@
-package edu.miguel.angel.gutierrez.ramirez.reto10;
+package edu.miguel.angel.gutierrez.ramirez.reto12;
 
-import edu.miguel.angel.gutierrez.ramirez.reto10.clases.*;
+import edu.miguel.angel.gutierrez.ramirez.reto12.clases.*;
 
 import java.io.*;
 import java.util.ArrayList;

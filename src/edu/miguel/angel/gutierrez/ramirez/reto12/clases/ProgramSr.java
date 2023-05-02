@@ -1,4 +1,4 @@
-package edu.miguel.angel.gutierrez.ramirez.reto10.clases;
+package edu.miguel.angel.gutierrez.ramirez.reto12.clases;
 
 /**
  * La clase ProgramSr incluye los atributos necesarios para representar a un programador senior.
