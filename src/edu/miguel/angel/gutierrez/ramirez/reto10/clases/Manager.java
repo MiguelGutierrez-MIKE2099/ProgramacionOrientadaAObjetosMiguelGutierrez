@@ -15,7 +15,7 @@ public class Manager extends Empleado implements  Entrevistador{
      */
     @Override
     public void interview() {
-        System.out.println("entrevistdor - Manager.");
+        System.out.println("entrevistador - Manager.");
     }
 }
-}
+

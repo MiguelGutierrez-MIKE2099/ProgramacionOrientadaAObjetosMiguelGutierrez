@@ -12,6 +12,15 @@ public class Empleado {
     private double salario;
     public String nombre;
     public String email;
+    public String edad;
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "\n    nombre='" + nombre +
+                "\n    edad=" + edad +
+                "\n}";
+    }
 
     /**
      * trabajar: este método será anulado por las subclases de Empleado.
